@@ -5,4 +5,29 @@
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 
 <struts>
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant>
+
+    <package name="basicstruts" extends="struts-default">
+
+        <action name="addProduct" class="main.action.ProductAction" method="add">
+            <result name="list" type="redirect">listProduct</result>
+        </action>
+
+        <action name="deleteProduct" class="main.action.ProductAction" method="delete">
+            <result name="list" type="redirect">listProduct</result>
+        </action>
+
+        <action name="editProduct" class="main.action.ProductAction" method="edit">
+            <result name="edit">product/edit.jsp</result>
+        </action>
+
+        <action name="updateProduct" class="main.action.ProductAction" method="update">
+            <result name="list" type="redirect">listProduct</result>
+        </action>
+
+        <action name="listProduct" class="main.action.ProductAction" method="list">
+            <result name="listJsp">product/list.jsp</result>
+        </action>
+    </package>
+
 </struts>

@@ -7,6 +7,11 @@
         <element id="directory" name="classes">
           <element id="module-output" name="StrutsHibernate" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Hibernate 5.4.9-5.4.9" />
+          <element id="library" level="project" name="Struts 2" />
+          <element id="file-copy" path="D:/编程/JAVA manven/MYSQL/mysql JDBC/mysql-connector-java-5.1.45/mysql-connector-java-5.1.45-bin.jar" />
+        </element>
       </element>
     </root>
   </artifact>
